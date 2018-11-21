@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Galaxy Zoo Mergers : Merger Wars</title>
+	<link href="css/styles_inner.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="script/prototype.js" type="text/javascript"></script>
+<script src="script/effects.js" type="text/javascript"></script>
+<script src="script/dragdrop.js" type="text/javascript"></script>
+<script src="script/controls.js" type="text/javascript"></script>
+<script src="script/application.js" type="text/javascript"></script>
+</head>
+
+<body onload="fade_flashes(); nexttwo();">
+	<div id="top_bar">
+	<div id="top_container">
+	<ul class="left">
+		<li>Galaxy Zoo Mergers is a  <a href="http://zooniverse.org" target="_blank" title="The Zooniverse"><img align="absmiddle" alt="Zooniverse Logo" border="0" height="26" src="image/zooniverse_logo.gif" width="136" /></a>  project</li>
+	</ul>
+	<ul class="right">
+		<li> ...just like <a href="http://www.milkywayproject.org" target="_blank" title="The Milky Way Project"><img align="absmiddle" alt="Milky Way Project Logo" border="0" height="18" src="image/mwp.png" width="187" /></a></li>
+	</ul>
+	</div>
+</div>
+<div style="clear:both;"></div>
+	
+	
+	<!-- START OF WRAP DIV -->
+<div id="wrap">
+<!-- START OF HEADER DIV -->
+<div id="header_archive">
+<a href="index.html"><img alt="Mergers Zoo - Header Image" src="image/header1.gif" style="border:none;" /></a>
+<div id="header_floater">
+<p>Data collection for Galaxy Zoo Mergers is closed.</p>
+</div>
+</div>
+
+<!-- END OF HEADER DIV -->
+
+
+<!-- START OF TOP NAV DIV -->
+<div id="topnav"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="science.html">The Science</a></li>
+<li><a href="how_to_take_part.html">How To Take Part</a></li>
+<li><a href="finale.html">Finale</a></li>
+<li><a href="merger_wars.html">Merger Wars</a></li>
+<li><a href="merger.html">Merge Galaxies</a></li>
+<li><a href="http://galaxyzooforum.org" target="_blank">Forum</a></li>
+<li><a href="zoo_media.html">Zoo Media</a></li>
+<li><a href="http://galaxyzooblog.org" target="_blank">Blog</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact_us.html">Contact Us</a></li>
+</ul></div>
+<!-- END OF TOP NAV DIV -->
+
+
+<div id="warsscript">
+<script type="text/javascript">
+var classifyurl = "/classify";
+var tournsrcs = new Array(8);
+var tournwins = new Array(8);
+var tourncomps = new Array(8);
+var tournimgs = new Array(8);
+var iid = 0;
+for(iid=0; iid<8; iid++)
+{
+  tournimgs[iid] = new Image();
+}
+
+
+var ids = new Array(64);
+var imgs = new Array(64);
+
+ids[0]='2842';
+imgs[0]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5bqty4umhics68d9na7_0023_batch001.jpg';
+
+ids[1]='36528';
+imgs[1]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0050_batch003.jpg';
+
+ids[2]='2307';
+imgs[2]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_164anign2z8xyorc3s9j_0025_batch001.jpg';
+
+ids[3]='43507';
+imgs[3]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_3pc5kmr1oms051y90um_0020_batch004.jpg';
+
+ids[4]='2889';
+imgs[4]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5bqty4umhics68d9na7_0070_batch001.jpg';
+
+ids[5]='30362';
+imgs[5]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_mq99sfapam079d6f9yu_0004_batch002.jpg';
+
+ids[6]='2758';
+imgs[6]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_56hx6xs1yvk02161ayy_0003_batch001.jpg';
+
+ids[7]='43429';
+imgs[7]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1fqn5uuolaa8yh1xe2_0020_batch004.jpg';
+
+ids[8]='36544';
+imgs[8]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_54j8bxmfkh2e6f7vto_0001_batch003.jpg';
+
+ids[9]='43492';
+imgs[9]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_3pc5kmr1oms051y90um_0005_batch004.jpg';
+
+ids[10]='54541';
+imgs[10]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_a1rbo55m7rbn9hoxxr_0011_batch005.jpg';
+
+ids[11]='2579';
+imgs[11]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1lrgl2m0o7uuqoqhis45_0017_batch001.jpg';
+
+ids[12]='2422';
+imgs[12]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1gk9nxo472ynr613ju5u_0003_batch001.jpg';
+
+ids[13]='36517';
+imgs[13]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0039_batch003.jpg';
+
+ids[14]='2769';
+imgs[14]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5aobsy7kmf3g7eai6q3_0006_batch001.jpg';
+
+ids[15]='3033';
+imgs[15]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5sx9m50dvhapyc5zy1r_0020_batch001.jpg';
+
+ids[16]='30317';
+imgs[16]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_cedrupu6hiz8pajitxf_0042_batch002.jpg';
+
+ids[17]='36468';
+imgs[17]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1hpmpwr7psk0a4dkc8en_0001_batch003.jpg';
+
+ids[18]='3038';
+imgs[18]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5sx9m50dvhapyc5zy1r_0025_batch001.jpg';
+
+ids[19]='36469';
+imgs[19]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_23382ko6ae2aq8apsb5y_0000_batch003.jpg';
+
+ids[20]='3067';
+imgs[20]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_jb5iwafj6xzr7uab4w_0004_batch001.jpg';
+
+ids[21]='2642';
+imgs[21]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4m8e10a3smvmvwf9ai4_0013_batch001.jpg';
+
+ids[22]='2590';
+imgs[22]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1lrgl2m0o7uuqoqhis45_0028_batch001.jpg';
+
+ids[23]='3025';
+imgs[23]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5sx9m50dvhapyc5zy1r_0012_batch001.jpg';
+
+ids[24]='2665';
+imgs[24]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4pdaiukpl5wvlrbcaog_0000_batch001.jpg';
+
+ids[25]='43403';
+imgs[25]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1dinz6dyd5ubcm233ggm_0003_batch004.jpg';
+
+ids[26]='30295';
+imgs[26]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_cedrupu6hiz8pajitxf_0020_batch002.jpg';
+
+ids[27]='2632';
+imgs[27]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4m8e10a3smvmvwf9ai4_0003_batch001.jpg';
+
+ids[28]='43404';
+imgs[28]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1dinz6dyd5ubcm233ggm_0004_batch004.jpg';
+
+ids[29]='36521';
+imgs[29]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0043_batch003.jpg';
+
+ids[30]='2295';
+imgs[30]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_164anign2z8xyorc3s9j_0013_batch001.jpg';
+
+ids[31]='2957';
+imgs[31]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5ozoevj9qm27mjti4su_0031_batch001.jpg';
+
+ids[32]='3022';
+imgs[32]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5sx9m50dvhapyc5zy1r_0009_batch001.jpg';
+
+ids[33]='30304';
+imgs[33]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_cedrupu6hiz8pajitxf_0029_batch002.jpg';
+
+ids[34]='43503';
+imgs[34]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_3pc5kmr1oms051y90um_0016_batch004.jpg';
+
+ids[35]='30239';
+imgs[35]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_6rel7tex0hrc3lxsfob_0024_batch002.jpg';
+
+ids[36]='2939';
+imgs[36]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5ozoevj9qm27mjti4su_0013_batch001.jpg';
+
+ids[37]='2774';
+imgs[37]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5aobsy7kmf3g7eai6q3_0011_batch001.jpg';
+
+ids[38]='2540';
+imgs[38]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1kal011b9a0sn4mwh7lm_0002_batch001.jpg';
+
+ids[39]='2439';
+imgs[39]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1gk9nxo472ynr613ju5u_0020_batch001.jpg';
+
+ids[40]='2389';
+imgs[40]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1bgbq0fg1bc5wvg9hhke_0024_batch001.jpg';
+
+ids[41]='2951';
+imgs[41]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5ozoevj9qm27mjti4su_0025_batch001.jpg';
+
+ids[42]='2793';
+imgs[42]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5aobsy7kmf3g7eai6q3_0030_batch001.jpg';
+
+ids[43]='30089';
+imgs[43]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_165w065kuf6632qrrh4_0003_batch002.jpg';
+
+ids[44]='36481';
+imgs[44]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0003_batch003.jpg';
+
+ids[45]='36619';
+imgs[45]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_8v9jhno348tmn0jyj42_0039_batch003.jpg';
+
+ids[46]='36623';
+imgs[46]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_8v9jhno348tmn0jyj42_0043_batch003.jpg';
+
+ids[47]='2707';
+imgs[47]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4udd0qncqbrxtvygwvv_0004_batch001.jpg';
+
+ids[48]='2864';
+imgs[48]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5bqty4umhics68d9na7_0045_batch001.jpg';
+
+ids[49]='2647';
+imgs[49]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4m8e10a3smvmvwf9ai4_0018_batch001.jpg';
+
+ids[50]='2511';
+imgs[50]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1i9hxnpz7oodwjyulo6x_0029_batch001.jpg';
+
+ids[51]='43444';
+imgs[51]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1fqn5uuolaa8yh1xe2_0035_batch004.jpg';
+
+ids[52]='2326';
+imgs[52]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_17ojw6m6ltfl3p5j53qe_0001_batch001.jpg';
+
+ids[53]='2550';
+imgs[53]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1kal011b9a0sn4mwh7lm_0012_batch001.jpg';
+
+ids[54]='36533';
+imgs[54]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0055_batch003.jpg';
+
+ids[55]='2923';
+imgs[55]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5kagyblk20z8lxnynd7_0003_batch001.jpg';
+
+ids[56]='43501';
+imgs[56]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_3pc5kmr1oms051y90um_0014_batch004.jpg';
+
+ids[57]='43407';
+imgs[57]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1dinz6dyd5ubcm233ggm_0007_batch004.jpg';
+
+ids[58]='36541';
+imgs[58]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2d84w2adp6s79qy6vhi8_0063_batch003.jpg';
+
+ids[59]='43470';
+imgs[59]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1n41bxjccxn00cyd4okc_0005_batch004.jpg';
+
+ids[60]='2676';
+imgs[60]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_4pdaiukpl5wvlrbcaog_0011_batch001.jpg';
+
+ids[61]='36472';
+imgs[61]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_2bx0e34nkhr2kcd0w9_0000_batch003.jpg';
+
+ids[62]='2909';
+imgs[62]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_5dqx1ddl6rv8tg8o0j9_0014_batch001.jpg';
+
+ids[63]='2553';
+imgs[63]='http://s3.amazonaws.com/zoo-mergers-assets/587724234257137777_1lpu0toelyraxlwjl51x_0000_batch001.jpg';
+
+var mult=-1;
+var ind=-1;
+var leftind=0;
+var rightind=0;
+var redirecting = 0;
+
+function left()
+{
+  tournwins[leftind]++;
+  nexttwo();
+}
+
+function right()
+{
+  tournwins[rightind]++;
+  nexttwo();
+}
+
+function neither()
+{
+  nexttwo();
+}
+
+function nexttwo()
+{
+   // specify temporary images for now
+   document.image1.src = "image/loading.gif";
+   document.image2.src = "image/loading.gif";
+
+   if(ind > 6 || ind < 0)
+   { 
+     if(ind > 0)
+     {
+       submitresults();
+     }
+     mult+=1;
+     if(mult > 7)
+     {
+       if(redirecting == 0)
+       {
+         redirecting = 1;
+         finishround();
+       }
+       return;
+     }
+     ind = 0; 
+     var i =0;
+     for(i=0; i<8; i++)
+     {
+       tournsrcs[i] = imgs[mult*8+i];
+       tournimgs[i].src = tournsrcs[i];
+       tournwins[i] = 0;
+       tourncomps[i] = 0;
+     }
+   }
+
+   // compute images
+   var src1 = "";
+   var src2 = "";
+   if(ind < 4)
+   {
+     leftind = 2*ind;
+     rightind = 2*ind+1;
+   }
+   else if(ind < 6)
+   {
+     var tmpind = (ind-4)*4;
+     if(tournwins[tmpind] > 0)
+     {
+       leftind=tmpind;
+     }
+     else
+     {
+       leftind=tmpind+1;
+     }
+     if(tournwins[tmpind+2] > 0)
+     {
+       rightind=tmpind+2;
+     }
+     else
+     {
+       rightind=tmpind+3;
+     }
+   }
+   else
+   {
+     leftind = 0;
+     rightind = 4;
+     var tmpwin = tournwins[0];
+     var tmpwin2 = tournwins[4];
+     var ii = 0;
+     for(ii=0; ii<4; ii++)
+     {
+       if(tournwins[ii] > tmpwin)
+       {
+         tmpwin = tournwins[ii];
+         leftind = ii;
+       }
+       if(tournwins[ii+4] > tmpwin2)
+       {
+         tmpwin2 = tournwins[ii+4];
+         rightind = ii+4;
+       }
+     }
+   }
+   tourncomps[leftind]++;
+   tourncomps[rightind]++;
+   src1 = tournsrcs[leftind];
+   src2 = tournsrcs[rightind];
+   ind+=1;
+   document.image1.src = src1;
+   document.image2.src = src2;
+}
+
+function submitresults()
+{
+
+}
+
+function finishround()
+{
+  window.location.reload();
+}
+
+</script>
+</div>
+
+<!-- START OF SUB NAVMAIN DIV -->
+<div id="subnavmain2">
+<!-- START OF LOG IN BUTTONS DIV -->
+<div id="loginbuttons">
+<ul>
+	<li class="register"><a href="http://galaxyzoo.org/signup" target="_blank">Register</a></li>
+	<li><a href="">Log In</a></li>
+</ul>
+</div>
+<!-- END OF LOG IN BUTTONS DIV -->
+
+</div>
+<!-- END OF SUB NAVMAIN DIV -->
+
+<!-- START OF PAGE DIV -->
+<div id="pageinner">
+  	<div id="warning" class="flash warning" onclick="new Effect.Fade('warning');">
+			<p>You aren't logged in so we can't record your results!</p>
+		</div>
+
+<!-- START OF LEFT COLUMN DIV -->
+<div id="mergerwars">
+<center>
+<h3>
+
+If you would like your results to be saved, please login.
+
+</h3>
+<p>Which of the two simulation results is the closer match to the image at the top? If neither is a good match, click the button at the bottom.</p>
+<br>
+<img src="http://s3.amazonaws.com/zoo-mergers-assets/sdss587724234257137777.png" width="200" height="200" name="targetimg" />
+</center>
+<br>
+<center>
+<a href="javascript:left();">
+<img src="image/loading.gif" width="200" height="200" name="image1" />
+</a>
+&nbsp;
+<a href="javascript:right();">
+<img src="image/loading.gif" width="200" height="200" name="image2" />
+</a>
+</div>
+<div id="leftcolumninner">
+<center>
+<a href="javascript:neither();">
+<img src="image/neither.gif" alt="Neither is a good match" />
+</a>
+</center>
+
+</center>
+</div>
+<!-- END OF LEFT COLUMN DIV -->
+</div>
+<!-- END OF PAGE DIV -->
+</div>
+<!-- END OF WRAP DIV -->
+
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1224199-15");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
